@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 199 77% 57%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 10% 40%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 240 3% 69%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --hover: 196.9 78% 42%;
+
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 199 77% 57%;
+    --radius: 1rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 206 70% 50%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 10% 40%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 206 70% 50%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(255, 255, 255) inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgba(44 44 46) !important;
+}
+
+.shadow-container {
+  box-shadow:
+    0px 2px 3px 0px rgb(20, 119, 159, 0.1),
+    0px 1px 2px -1px rgb(20, 119, 159, 0.1);
+}
+
+.shadow-card {
+  box-shadow:
+    0px 2px 3px 0px rgb(20, 119, 159, 0.1),
+    0px 1px 2px -1px rgb(20, 119, 159, 0.1);
+
+  &:hover {
+    box-shadow:
+      0px 2px 3px 0px rgb(20, 119, 159, 0.1),
+      0px 4px 3px 2px rgb(20, 119, 159, 0.1);
+  }
+}
+
+.shadow-header {
+  box-shadow: 1px 1px 5px 2px rgb(20, 119, 159, 0.1);
+}
+
+.image-gradient {
+  mask-image: linear-gradient(black 90%, transparent);
+}
