@@ -1,8 +1,8 @@
-import { envs } from "@/config/envs";
 import axios from "axios";
 import Cookies from "js-cookie";
+
 const api = axios.create({
-  baseURL: envs.apiUrl,
+  baseURL: "/api",
 });
 
 api.interceptors.request.use((config) => {

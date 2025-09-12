@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/api/(.*)",
+      "destination": "https://api.handin.pro/api/$1"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
