@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "prebuild": "node scripts/generate-vercel-config.js",
     "preview": "vite preview"
   },
   "dependencies": {
